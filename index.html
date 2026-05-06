@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Code Quiz</title>
+  <meta name="description" content="Quiz interativo Verdadeiro ou Falso sobre o Claude Code, com ranking global em tempo real." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://lvnheymneiltxuyriyqd.supabase.co wss://lvnheymneiltxuyriyqd.supabase.co;" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">Claude Code</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-quiz">Quiz</span>
+    </div>
+  </header>
+
+  <!-- Anuncia troca de tela para screen readers (substitui aria-live no <main>) -->
+  <div id="route-announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <main id="app">
+    <!-- Conteúdo das telas é injetado via app.js -->
+  </main>
+
+  <footer class="site-footer">
+    <small>Feito para aprender mais sobre o Claude Code.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
